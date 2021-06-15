@@ -1,8 +1,8 @@
 {
-    "name": "rubix/tensor",
+    "name": "scienide/tensor",
     "type": "library",
     "description": "A library and extension that provides objects for scientific computing in PHP.",
-    "homepage": "https://github.com/RubixML/Tensor",
+    "homepage": "https://github.com/Scien-ide/Tensor",
     "license": "MIT",
     "keywords": [
         "1d convolution", "2d convolution", "arithmetic", "blas", "computation", "computing",
@@ -81,9 +81,8 @@
         "process-timeout": 3000
     },
     "support": {
-        "issues": "https://github.com/RubixML/Tensor/issues",
-        "source": "https://github.com/RubixML/Tensor",
-        "chat": "https://t.me/RubixML",
+        "issues": "https://github.com/Scien-ide/Tensor/issues",
+        "source": "https://github.com/Scien-ide/Tensor",
         "email": "support@andrewdalpino.com"
     }
 }

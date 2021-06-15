@@ -10,7 +10,7 @@ Follow the instructions below to install either Tensor PHP or the Tensor extensi
 ### Tensor PHP
 Install Tensor PHP into your project with [Composer](https://getcomposer.org/):
 ```sh
-$ composer require rubix/tensor
+$ composer require scienide/tensor
 ```
 
 ### Tensor Extension
@@ -39,7 +39,7 @@ $ pecl install tensor
 ## Manually Compiling the Extension
 Clone the repository locally using [Git](https://git-scm.com/):
 ```sh
-$ git clone https://github.com/RubixML/Tensor
+$ git clone https://github.com/Scien-ide/Tensor
 ```
 
 Make sure you have all the necessary build tools installed such as a C compiler and make tools. For example, on an Ubuntu linux system you can enter the following on the command line to install the necessary dependencies.
@@ -71,12 +71,12 @@ php -m | grep tensor
 
 ## Performance Comparison
 
-![Tensor Performance MNIST](https://raw.githubusercontent.com/RubixML/Tensor/master/docs/images/tensor-performance-mnist.png)
+![Tensor Performance MNIST](https://raw.githubusercontent.com/Scien-ide/Tensor/master/docs/images/tensor-performance-mnist.png)
 
-![Tensor Performance Benchmarks](https://raw.githubusercontent.com/RubixML/Tensor/master/docs/images/tensor-performance-benchmarks.png)
+![Tensor Performance Benchmarks](https://raw.githubusercontent.com/Scien-ide/Tensor/master/docs/images/tensor-performance-benchmarks.png)
 
 ## Funding
-Rubix ML is funded by donations from the community. You can become a sponsor by making a contribution to one of our funding sources below.
+Tensor is funded by donations from the community. You can become a sponsor by making a contribution to one of our funding sources below.
 
 - [Github Sponsors](https://github.com/sponsors/RubixML)
 
