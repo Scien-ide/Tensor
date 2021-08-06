@@ -29,8 +29,7 @@ $ pecl install tensor
 - A Fortran compiler such as [GFortran](https://gcc.gnu.org/wiki/GFortran)
 - The PHP development package (source code and tooling)
 - [OpenBLAS](https://www.openblas.net/) development package
-- [LAPACKE](https://www.netlib.org/lapack/lapacke.html) C interface to [LAPACK](http://www.netlib.org/lapack/)
-- [re2c](https://re2c.org/) 0.13.6 or later
+- [LAPACKE](https://www.netlib.org/lapack/lapacke.html) development package
 - [GNU make](https://www.gnu.org/software/make/) 3.81 or later
 - [autoconf](https://www.gnu.org/software/autoconf/autoconf.html) 2.31 or later
 - [automake](https://www.gnu.org/software/automake/) 1.14 or later
