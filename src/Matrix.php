@@ -389,7 +389,7 @@ class Matrix implements Tensor
     /**
      * Return a tuple with the dimensionality of the tensor.
      *
-     * @return int[]
+     * @return array{int<0,max>,int<0,max>}
      */
     public function shape() : array
     {
@@ -419,7 +419,7 @@ class Matrix implements Tensor
     /**
      * Return the number of elements in the tensor.
      *
-     * @return int<0,max>
+     * @return int
      */
     public function size() : int
     {
