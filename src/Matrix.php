@@ -41,14 +41,14 @@ class Matrix implements Tensor
     /**
      * The number of rows in the matrix.
      *
-     * @var int
+     * @var int<0,max>
      */
     protected int $m;
 
     /**
      * The number of columns in the matrix.
      *
-     * @var int
+     * @var int<0,max>
      */
     protected int $n;
 
@@ -106,8 +106,8 @@ class Matrix implements Tensor
     /**
      * Return a zero matrix with the given dimensions.
      *
-     * @param int $m
-     * @param int $n
+     * @param int<0,max> $m
+     * @param int<0,max> $n
      * @return self
      */
     public static function zeros(int $m, int $n) : self
@@ -118,8 +118,8 @@ class Matrix implements Tensor
     /**
      * Return a one matrix with the given dimensions.
      *
-     * @param int $m
-     * @param int $n
+     * @param int<0,max> $m
+     * @param int<0,max> $n
      * @return self
      */
     public static function ones(int $m, int $n) : self
@@ -158,8 +158,8 @@ class Matrix implements Tensor
      * Fill a matrix with a given value at each element.
      *
      * @param float $value
-     * @param int $m
-     * @param int $n
+     * @param int<0,max> $m
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
      */
@@ -181,8 +181,8 @@ class Matrix implements Tensor
     /**
      * Return a random uniform matrix with values between 0 and 1.
      *
-     * @param int $m
-     * @param int $n
+     * @param int<0,max> $m
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
      */
@@ -218,8 +218,8 @@ class Matrix implements Tensor
     /**
      * Return a standard normally distributed random matrix i.e values between -1 and 1.
      *
-     * @param int $m
-     * @param int $n
+     * @param int<0,max> $m
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
      */
@@ -268,8 +268,8 @@ class Matrix implements Tensor
     /**
      * Generate a m x n matrix with elements from a Poisson distribution.
      *
-     * @param int $m
-     * @param int $n
+     * @param int<0,max> $m
+     * @param int<0,max> $n
      * @param float $lambda
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
@@ -317,8 +317,8 @@ class Matrix implements Tensor
     /**
      * Return a uniform random matrix with mean 0 and unit variance.
      *
-     * @param int $m
-     * @param int $n
+     * @param int<0,max> $m
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
      */
@@ -419,7 +419,7 @@ class Matrix implements Tensor
     /**
      * Return the number of elements in the tensor.
      *
-     * @return int
+     * @return int<0,max>
      */
     public function size() : int
     {
@@ -429,7 +429,7 @@ class Matrix implements Tensor
     /**
      * Return the number of rows in the matrix.
      *
-     * @return int
+     * @return int<0,max>
      */
     public function m() : int
     {
@@ -439,7 +439,7 @@ class Matrix implements Tensor
     /**
      * Return the number of columns in the matrix.
      *
-     * @return int
+     * @return int<0,max>
      */
     public function n() : int
     {

@@ -34,7 +34,7 @@ class Vector implements Tensor
     /**
      * The number of elements in the vector.
      *
-     * @var int
+     * @var int<0,max>
      */
     protected int $n;
 
@@ -63,7 +63,7 @@ class Vector implements Tensor
     /**
      * Build a vector of zeros with n elements.
      *
-     * @param int $n
+     * @param int<0,max> $n
      * @return self
      */
     public static function zeros(int $n) : self
@@ -74,7 +74,7 @@ class Vector implements Tensor
     /**
      * Build a vector of ones with n elements.
      *
-     * @param int $n
+     * @param int<0,max> $n
      * @return self
      */
     public static function ones(int $n) : self
@@ -86,7 +86,7 @@ class Vector implements Tensor
      * Fill a vector with a given value.
      *
      * @param float $value
-     * @param int $n
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
      */
@@ -103,7 +103,7 @@ class Vector implements Tensor
     /**
      * Return a random uniform vector with values between 0 and 1.
      *
-     * @param int $n
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
      */
@@ -129,7 +129,7 @@ class Vector implements Tensor
      * Return a standard normally distributed (Gaussian) random vector with mean 0
      * and unit variance.
      *
-     * @param int $n
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
      */
@@ -163,7 +163,7 @@ class Vector implements Tensor
     /**
      * Generate a vector with n elements from a Poisson distribution.
      *
-     * @param int $n
+     * @param int<0,max> $n
      * @param float $lambda
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
@@ -200,7 +200,7 @@ class Vector implements Tensor
     /**
      * Return a uniform random vector with mean 0 and unit variance.
      *
-     * @param int $n
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
      */
@@ -240,7 +240,7 @@ class Vector implements Tensor
      *
      * @param float $min
      * @param float $max
-     * @param int $n
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return self
      */
@@ -314,7 +314,7 @@ class Vector implements Tensor
     /**
      * Return the number of elements in the vector.
      *
-     * @return int
+     * @return int<0,max>
      */
     public function size() : int
     {
@@ -324,7 +324,7 @@ class Vector implements Tensor
     /**
      * Return the number of rows in the vector.
      *
-     * @return int
+     * @return int<0,max>
      */
     public function m() : int
     {
@@ -334,7 +334,7 @@ class Vector implements Tensor
     /**
      * Return the number of columns in the vector.
      *
-     * @return int
+     * @return int<0,max>
      */
     public function n() : int
     {
@@ -380,8 +380,8 @@ class Vector implements Tensor
     /**
      * Return a matrix in the shape specified.
      *
-     * @param int $m
-     * @param int $n
+     * @param int<0,max> $m
+     * @param int<0,max> $n
      * @throws \Tensor\Exceptions\InvalidArgumentException
      * @return \Tensor\Matrix
      */
