@@ -1,3 +1,6 @@
+- 3.0.1
+    - Typehints to appease PHPStan
+
 - 3.0.0
     - No changes
 
